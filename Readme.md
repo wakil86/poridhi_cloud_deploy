@@ -27,7 +27,7 @@ CREATE DATABASE flask_jwt_db;
 ```
 ### Create database user
 ```bash
-CREATE USER c WITH PASSWORD 'poridhi1234';
+CREATE USER poridhi WITH PASSWORD 'poridhi1234';
 ```
 ### Grant privilage to user
 ```bash
