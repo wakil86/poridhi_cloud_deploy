@@ -213,12 +213,10 @@ services:
 volumes:
   postgres_data:
 ```
+***Stay alert about port maping.We are going to run the same database & API inside the docker and locally via diferent ports***
+
 ### Install ```Docker``` & ```Docker-Compose```
 
-### Stop the ```postgresql``` server which is running on port 5432
-```bash
-sudo systemctl stop postgresql
-```
 
 ### Build your docker image
 ```bash
@@ -234,7 +232,16 @@ docker compose up
 ### Expected output
 ![APP_RUN](images/docrun.png)
 
-***Your app is running.You can test this via terminal***
+***Your app is running.Now we will create a new load balancer***
+### Expose port 5001
+![APP_RUN](images/5001.png)
+
+### Click on the link
+![APP_RUN](images/dockerloadb.png)
+
+### You will be redirected to this page
+![APP_RUN](images/dockerloadbcopy.png)
+***Copy the URL and you are ready to test you endpoints***
 
 ### Registration
 ```bash
