@@ -183,7 +183,7 @@ services:
   api:
     build: . 
     ports:
-      - "5000:5000" 
+      - "5001:5000" 
     volumes:
       - .:/app 
     environment:
@@ -205,7 +205,7 @@ services:
       POSTGRES_PASSWORD: poridhi1234
       POSTGRES_DB: flask_jwt_db
     ports:
-      - "5432:5432" 
+      - "5433:5432" 
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
